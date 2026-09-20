@@ -34,7 +34,7 @@
 
                 <div>
                     <label>CPF:</label>
-                    <input type="number" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required>
+                    <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required>
                 </div>
 
                 <div>
@@ -44,7 +44,7 @@
 
                 <div>
                     <label>CEP:</label>
-                    <input type="number" pattern="[0-9]{5}-[0-9]{3}">
+                    <input type="text" pattern="[0-9]{5}-[0-9]{3}">
                 </div>
 
                 <div>
@@ -57,7 +57,7 @@
                 <legend>Informações de contato:</legend>
                 <div>
                     <label>Telefone:</label>
-                    <input type="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="99 9999-999" required>
+                    <input type="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="99 99999-999" required>
                 </div>
 
                 <div>
@@ -69,27 +69,27 @@
             <fieldset>
                 <legend>Vagas desejadas:</legend>
                 <div>
-                    <input type="checkbox" value="sim">
+                    <input type="checkbox" name="vagas" value="sim">
                     <label>Cozinha e Montagem</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" value="sim">
+                    <input type="checkbox" name="vagas" value="sim">
                     <label>Equipe de Ronda e Logística</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" value="sim">
+                    <input type="checkbox" name="vagas" value="sim">
                     <label>Acolhimento e Escuta</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" value="sim">
+                    <input type="checkbox" name="vagas" value="sim">
                     <label>Triagem de Doações</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" value="sim">
+                    <input type="checkbox" name="vagas" value="sim">
                     <label>Apoio Técnico e Operacional</label>
                 </div>
             </fieldset>
