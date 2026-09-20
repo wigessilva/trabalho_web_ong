@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Instituto Vida Plena</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <header>
+            <img
+                src="img/logo.png"
+                height="60"
+                alt="Logo oficial da ONG">
+            <h1>CADASTRO</h1>
+        </header>
+
+        <form>
+            <fieldset>
+                <legend>Informações pessoais:</legend>
+                <div>
+                    <label>Nome completo:</label>
+                    <input type="text" required>
+                </div>
+
+                <div>
+                    <label>CPF:</label>
+                    <input type="number" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required>
+                </div>
+
+                <div>
+                    <label>Idade:</label>
+                    <input type="number" min="18" required>
+                </div>
+
+                <div>
+                    <label>CEP:</label>
+                    <input type="number" pattern="[0-9]{5}-[0-9]{3}">
+                </div>
+
+                <div>
+                    <label>Profissão:</label>
+                    <input type="text">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de contato:</legend>
+                <div>
+                    <label>Telefone:</label>
+                    <input type="tel" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="99 9999-999" required>
+                </div>
+
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="seuemail@gmail.com">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vagas desejadas:</legend>
+                <div>
+                    <input type="checkbox" value="sim">
+                    <label>Cozinha e Montagem</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sim">
+                    <label>Equipe de Ronda e Logística</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sim">
+                    <label>Acolhimento e Escuta</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sim">
+                    <label>Triagem de Doações</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" value="sim">
+                    <label>Apoio Técnico e Operacional</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <footer>
+            <ul>
+                <li>Telefone de contato: (31) 9999-9999</li>
+                <li>E-mail: institutovidaplena@gmail.com</li>
+            </ul>
+        </footer>
+
+    </main>
+</body>
+</html>
